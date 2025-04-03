@@ -1,3 +1,24 @@
-.footer-links {
-    
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav_link {
+    padding: 6px;
+    margin: 10px;
+}
+
+.footer-links_column {
+    display: flex;
+    justify-content: space-around;
 }
