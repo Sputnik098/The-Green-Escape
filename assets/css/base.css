@@ -1,24 +1,50 @@
+:root {
+    --interact:#4caf50;
+    --bg-main:#f5f5dc;
+    --text:#333;
+    --bg-secondary:#fff;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--bg-main);
 }
 
 .logo {
-    width: 64px;
+    width: 71px;
     height: 64px;
 }
 
 .header-nav {
     display: flex;
     justify-content: flex-end;
+    font-family: 'Poppins';
 }
 
 .header-nav_link {
-    padding: 6px;
-    margin: 10px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .footer-links_column {
     display: flex;
     justify-content: space-around;
+    background-color: var(--bg-main);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-links_links {
+    padding-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
