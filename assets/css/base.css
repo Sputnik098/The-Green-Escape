@@ -1,10 +1,10 @@
 :root {
-    --interact:#4caf50;
     --bg-main:#f5f5dc;
     --text:#333;
     --bg-secondary:#fff;
 }
 
+/* Start header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -12,8 +12,8 @@
 }
 
 .logo {
-    width: 71px;
-    height: 64px;
+    width: 89px;
+    height: 80px;
 }
 
 .header-nav {
@@ -26,7 +26,9 @@
     padding: 1rem;
     margin: 1rem;
 }
+/* End header */
 
+/* Start footer */
 .footer-links_column {
     display: flex;
     justify-content: space-around;
@@ -42,9 +44,18 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--text);
+}
+
+li {
+    color: var(--text);
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
+
+.social-icons {
+    width: 16px;
+}
+/* End footer */
