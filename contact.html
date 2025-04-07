@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css">
         <!-- Import styles -->
         <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/contact.css">
     </head>
     <body>
         <header class="header">
@@ -28,7 +29,25 @@
                 </ul>
             </nav>
         </header>
-        <main></main>
+        <main  class="main-content">
+            <h2>Nous contacter</h2>
+            <section>
+                <form class="contact-form">
+                    <label>Nom : <span class="required">*</span></label>
+                    <input placeholder="Ex : Martin" type="text" required>
+                    <label >Pr&eacute;nom : <span class="required">*</span></label>
+                    <input placeholder="Ex : Pierre" type="text" required>
+                    <label>Mail : <span class="required">*</span></label>
+                    <input placeholder="Ex : pierre.martin@domaine.fr" type="email" required>
+                    <label>Sujet :</label>
+                    <input type="text">
+                    <label>Message : <span class="required">*</span></label>
+                    <textarea rows="5"></textarea>
+                    <input id="submit" type="submit">
+                    <input id="reset" type="reset">
+                </form>
+            </section>
+        </main>
         <footer>
             <div class="footer-links_column">
                 <div class="footer-links_items">

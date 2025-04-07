@@ -1,0 +1,19 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+    margin: 1rem 15rem;
+}
+
+.required {
+    color: #f00;
+}
+
+#submit, #reset {
+    width: 5rem;
+    margin: 0.5rem 5rem;
+}
+
+label, input {
+    margin-bottom: 0.5rem;
+}

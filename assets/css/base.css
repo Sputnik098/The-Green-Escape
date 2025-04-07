@@ -59,3 +59,31 @@ h1, h2, h3 {
     width: 16px;
 }
 /* End footer */
+
+.main-content {
+    margin: 2.5rem 10rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--text);
+}
+
+strong {
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--interact);
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #65e06a;
+}
+
+button:active {
+    background-color: #326b34;
+}
