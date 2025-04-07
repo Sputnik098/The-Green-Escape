@@ -9,11 +9,13 @@
     color: #f00;
 }
 
-#submit, #reset {
+#submit,
+#reset {
     width: 5rem;
     margin: 0.5rem 5rem;
 }
 
-label, input {
+label,
+input {
     margin-bottom: 0.5rem;
 }

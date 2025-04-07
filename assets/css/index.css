@@ -1,7 +1,7 @@
 :root {
     --hero: #fff;
-    --interact:#4caf50;
-    --text:#333;
+    --interact: #4caf50;
+    --text: #333;
 }
 
 /* Start Hero */
@@ -15,20 +15,25 @@
 
 .hero h1 {
     position: absolute;
-    top: 60%;
-    left: 30%;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    text-align: center;
     color: var(--hero);
     font-size: 5rem;
 }
 
 .hero p {
     position: absolute;
-    top: 80%;
-    left: 31.5%;
+    top: 33vh;
+    left: 0;
+    right: 0;
+    text-align: center;
     color: var(--hero);
     font-family: 'Poppins';
     font-size: 2.5rem;
 }
+
 /* End hero */
 
 .text {
@@ -53,9 +58,11 @@
     text-align: center;
 }
 
-.container-image_1 img {
+.container-image_1 img,
+.container-image_2 img,
+.container-image_3 img,
+.container-image_4 img {
     max-width: 50%;
-
 }
 
 .container-image_2 {
@@ -64,18 +71,10 @@
     text-align: center;
 }
 
-.container-image_2 img {
-    max-width: 50%;
-}
-
 .container-image_3 {
     grid-column: 1;
     grid-row: 2;
     text-align: center;
-}
-
-.container-image_3 img {
-    max-width: 50%;
 }
 
 .container-image_4 {
@@ -84,19 +83,14 @@
     text-align: center;
 }
 
-.container-image_4 img {
-    max-width: 50%;
-}
 /* End container image */
 
 .button-center {
     text-align: center;
-    
 }
 
 .button-links {
     font-size: medium;
-    
 }
 
 .contact {
@@ -109,7 +103,107 @@
     width: 32px;
 }
 
-.review-text, .review-name{
+.review-text,
+.review-name {
     padding: 1rem;
     font-family: 'Poppins';
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .hero h1 {
+        position: absolute;
+        top: 30vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .hero p {
+        position: absolute;
+        top: 40vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .container-image_1,
+    .container-image_2,
+    .container-image_3,
+    .container-image_4 {
+        padding: 1rem;
+    }
+
+    .contact {
+        padding: 0.5rem;
+    }
+
+    .stars {
+        padding-top: 1rem;
+        width: 24px;
+    }
+
+    .review-text,
+    .review-name {
+        padding: 1rem;
+    }
+
+    .container-image_1 img,
+    .container-image_2 img,
+    .container-image_3 img,
+    .container-image_4 img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero h1 {
+        position: absolute;
+        top: 14vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        position: absolute;
+        top: 17vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 0.62rem;
+    }
+
+    .main-content {
+        margin: 1rem;
+    }
+
+    .stars {
+        width: 16px;
+    }
+
+    .button-center {
+        padding-bottom: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-image_1 img,
+    .container-image_2 img,
+    .container-image_3 img,
+    .container-image_4 img {
+        max-width: 100%;
+    }
+
+    .container-image_1,
+    .container-image_2,
+    .container-image_3,
+    .container-image_4 {
+        padding-bottom: 2rem;
+    }
 }

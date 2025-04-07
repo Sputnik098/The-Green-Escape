@@ -1,7 +1,7 @@
 :root {
-    --bg-main:#f5f5dc;
-    --text:#333;
-    --bg-secondary:#fff;
+    --bg-main: #f5f5dc;
+    --text: #333;
+    --bg-secondary: #fff;
 }
 
 /* Start header */
@@ -26,6 +26,11 @@
     padding: 1rem;
     margin: 1rem;
 }
+
+.hamburger {
+    display: none;
+}
+
 /* End header */
 
 /* Start footer */
@@ -51,13 +56,16 @@ li {
     color: var(--text);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
 }
 
 .social-icons {
     width: 16px;
 }
+
 /* End footer */
 
 .main-content {
@@ -86,4 +94,44 @@ button:hover {
 
 button:active {
     background-color: #326b34;
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .footer-links_column {
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .footer-links_links {
+        padding-top: 1rem;
+    }
+
+    .footer-links_items {
+        padding-bottom: 2rem;
+    }
+
+    .social-icons {
+        width: 16px;
+    }
 }
